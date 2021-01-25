@@ -1,0 +1,12 @@
+{
+  "name": "react_native",
+  "displayName": "react_native",
+  "expo": {
+    "name": "react_native",
+    "slug": "react_native",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
