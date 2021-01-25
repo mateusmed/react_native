@@ -9,6 +9,7 @@ import CompPadrao, {Comp1, Comp2} from './components/Mult'
 
 
 import MinMax from "./components/MinMax";
+import Aleatorio from "./components/Aleatorio";
 
 
 function teste1(){
@@ -21,6 +22,7 @@ function teste1(){
 }
 
 function teste2(){
+
 
   console.warn("mensagem de teste");
 
@@ -44,6 +46,14 @@ function minMaxTest(){
 }
 
 
+function aleatorioTest(){
+
+    return <View style={style.App}>
+                <Aleatorio min={1} max={3}/>
+           </View>
+}
+
+
 const style = StyleSheet.create({
   App:{
     fontSize: 24,
@@ -57,7 +67,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return minMaxTest();
+  return aleatorioTest();
 
 }
 
