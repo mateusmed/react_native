@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4dea0c-4f77-46dd-84a3-f96335247c86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/exercicios/src/analise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/src/components/MinMax.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/exercicios/src/components/Mult.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/estilo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercicios/App.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/exercicios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercicios/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercicios/src/components/Primeiro.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/Primeiro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/estilo.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/estilo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611575730675</updated>
-      <workItem from="1611575732134" duration="14284000" />
+      <workItem from="1611575732134" duration="15600000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,9 @@ import Primeiro from './components/Primeiro'
 import CompPadrao, {Comp1, Comp2} from './components/Mult'
 
 
+import MinMax from "./components/MinMax";
+
+
 function teste1(){
   return <View>
              {/*<Primeiro/>*/}
@@ -18,6 +21,9 @@ function teste1(){
 }
 
 function teste2(){
+
+  console.warn("mensagem de teste");
+
   return <View style={style.App}>
               <CompPadrao/>
               <Comp1/>
@@ -26,19 +32,32 @@ function teste2(){
          </View>
 }
 
+
+function minMaxTest(){
+
+  console.warn("mensagem de teste");
+
+  return <View style={style.App}>
+            <MinMax min="3" max="20" />
+            <MinMax min={1} max={90} />
+         </View>
+}
+
+
 const style = StyleSheet.create({
   App:{
     fontSize: 24,
     //backgroundColor: '#A00', //cor vermelha
     flexGrow:1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    padding: 20
   }
 })
 
 function App(){
 
-  return teste2();
+  return minMaxTest();
 
 }
 
