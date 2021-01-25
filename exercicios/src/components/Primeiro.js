@@ -1,5 +1,6 @@
 import React from 'react'
 import {Text} from 'react-native'
+import Estilo from './estilo'
 
 function Segundo(){
     return <Text> segundo </Text>
@@ -7,7 +8,9 @@ function Segundo(){
 
 
 function Primeiro(){
-    return <Text> primeiro componente </Text>
+    return <Text style={Estilo.fontGrande}>
+                primeiro componente
+           </Text>
 }
 
 export default Primeiro;
