@@ -6,8 +6,11 @@ import Estilo from './estilo'
 
 function Screen(props){
 
-    let max = props.max;
-    let min = props.min;
+    // let max = props.max;
+    // let min = props.min;
+    // ou
+    let {min, max} = props;
+
     let between = Math.floor((Math.random() * max) + min);
 
     return <Text style={Estilo.fontGrande}>
