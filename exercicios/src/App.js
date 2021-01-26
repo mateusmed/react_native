@@ -15,6 +15,7 @@ import Botao from './components/Botao';
 import Contador from './components/Contador';
 import PaiDireta from './components/direta/Pai';
 import PaiIndireta from './components/indireta/Pai';
+import ContadorV2 from './components/contador/ContadorV2'
 
 function teste1(){
   return <View>
@@ -94,6 +95,14 @@ function comunicacaoIndireta(){
 }
 
 
+//comunicação indireta (callback)
+function contadorV2(){
+    return <View style={style.App}>
+                <ContadorV2/>
+           </View>
+}
+
+
 
 const style = StyleSheet.create({
   App:{
@@ -108,7 +117,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return comunicacaoIndireta();
+  return contadorV2();
 
 }
 

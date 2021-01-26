@@ -3,6 +3,16 @@ import {View, Text} from 'react-native'
 import Estilo from './estilo'
 
 
+/*
+
+View renders a native view. Which means it'll affect styling, layout etc.
+
+Fragment is just a way to group things under a single element in React.
+It doesn't render anything and doesn't affect styling or layout.
+It's like it's not even there.
+
+* */
+
 function screen(props){
 
     let {principal, secundario} = props;

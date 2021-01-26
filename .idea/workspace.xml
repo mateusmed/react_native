@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4dea0c-4f77-46dd-84a3-f96335247c86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/direta/Filho.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/direta/Pai.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/indireta/Filho.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/indireta/Pai.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercicios/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/Fragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/Fragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/contador/ContadorBotoes.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/contador/ContadorBotoes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/contador/ContadorDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/contador/ContadorDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/contador/ContadorV2.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/contador/ContadorV2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/indireta/Filho.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/indireta/Filho.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/indireta/Pai.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/indireta/Pai.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611575730675</updated>
       <workItem from="1611575732134" duration="18853000" />
-      <workItem from="1611665763226" duration="7606000" />
+      <workItem from="1611665763226" duration="12104000" />
     </task>
     <servers />
   </component>
