@@ -10,7 +10,8 @@ import CompPadrao, {Comp1, Comp2} from './components/Mult'
 
 import MinMax from "./components/MinMax";
 import Aleatorio from "./components/Aleatorio";
-import Fragment from "./components/Fragment"
+import Fragment from "./components/Fragment";
+import Botao from './components/Botao';
 
 
 function teste1(){
@@ -62,6 +63,16 @@ function fragment(){
            </View>
 }
 
+function botaoTest(){
+
+    return <View style={style.App}>
+                <Botao/>
+           </View>
+
+
+
+}
+
 
 const style = StyleSheet.create({
   App:{
@@ -76,7 +87,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return fragment();
+  return botaoTest();
 
 }
 
