@@ -12,7 +12,7 @@ import MinMax from "./components/MinMax";
 import Aleatorio from "./components/Aleatorio";
 import Fragment from "./components/Fragment";
 import Botao from './components/Botao';
-
+import Contador from './components/Contador';
 
 function teste1(){
   return <View>
@@ -24,8 +24,6 @@ function teste1(){
 }
 
 function teste2(){
-
-
   console.warn("mensagem de teste");
 
   return <View style={style.App}>
@@ -58,7 +56,8 @@ function aleatorioTest(){
 function fragment(){
 
     return <View  style={style.App}>
-                <Fragment principal={"principal"} secundario={"secundario"}></Fragment>
+                <Fragment principal={"principal"}
+                          secundario={"secundario"}/>
 
            </View>
 }
@@ -68,9 +67,12 @@ function botaoTest(){
     return <View style={style.App}>
                 <Botao/>
            </View>
+}
 
-
-
+function contadorTest(){
+    return <View style={style.App}>
+                <Contador inicial={1}/>
+           </View>
 }
 
 
@@ -87,7 +89,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return botaoTest();
+  return contadorTest();
 
 }
 
