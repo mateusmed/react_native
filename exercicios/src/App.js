@@ -10,6 +10,7 @@ import CompPadrao, {Comp1, Comp2} from './components/Mult'
 
 import MinMax from "./components/MinMax";
 import Aleatorio from "./components/Aleatorio";
+import Fragment from "./components/Fragment"
 
 
 function teste1(){
@@ -53,6 +54,14 @@ function aleatorioTest(){
            </View>
 }
 
+function fragment(){
+
+    return <View  style={style.App}>
+                <Fragment principal={"principal"} secundario={"secundario"}></Fragment>
+
+           </View>
+}
+
 
 const style = StyleSheet.create({
   App:{
@@ -67,7 +76,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return aleatorioTest();
+  return fragment();
 
 }
 
