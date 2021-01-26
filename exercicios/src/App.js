@@ -13,6 +13,8 @@ import Aleatorio from "./components/Aleatorio";
 import Fragment from "./components/Fragment";
 import Botao from './components/Botao';
 import Contador from './components/Contador';
+import PaiDireta from './components/direta/Pai';
+import PaiIndireta from './components/indireta/Pai';
 
 function teste1(){
   return <View>
@@ -76,6 +78,23 @@ function contadorTest(){
 }
 
 
+//comunicação direta
+function comunicacaoDireta(){
+    return <View style={style.App}>
+               <PaiDireta/>
+           </View>
+}
+
+
+//comunicação indireta (callback)
+function comunicacaoIndireta(){
+    return <View style={style.App}>
+        <PaiIndireta/>
+    </View>
+}
+
+
+
 const style = StyleSheet.create({
   App:{
     fontSize: 24,
@@ -89,7 +108,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return contadorTest();
+  return comunicacaoIndireta();
 
 }
 
