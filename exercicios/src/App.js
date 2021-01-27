@@ -20,6 +20,10 @@ import ParImpar from './components/ParImpar'
 import Familia from './components/relacao/Familia'
 import Membro from './components/relacao/Membro'
 
+import UsuarioLogado from './components/UsuarioLogado'
+import If from './components/If'
+
+
 function teste1(){
   return <View>
              {/*<Primeiro/>*/}
@@ -129,6 +133,17 @@ function relaco(){
             </View>
 }
 
+function condicional(){
+
+    let usuario = { nome: 'Mateus', email: 'mateus.gmail.com'}
+    let usuario2 = { email: 'mateus.gmail.com'}
+
+    return <View>
+                <UsuarioLogado usuario={usuario} />
+                <UsuarioLogado usuario={usuario2} />
+           </View>
+}
+
 
 const style = StyleSheet.create({
   App:{
@@ -143,7 +158,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return relaco();
+  return condicional();
 
 }
 

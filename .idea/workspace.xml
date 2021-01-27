@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4dea0c-4f77-46dd-84a3-f96335247c86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/ParImpar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/relacao/Familia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/relacao/Membro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/src/components/If.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/src/components/UsuarioLogado.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercicios/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/App.js" afterDir="false" />
     </list>
@@ -57,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611575730675</updated>
       <workItem from="1611575732134" duration="18853000" />
-      <workItem from="1611665763226" duration="16507000" />
+      <workItem from="1611665763226" duration="18301000" />
     </task>
     <servers />
   </component>
