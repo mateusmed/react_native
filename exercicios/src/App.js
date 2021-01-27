@@ -16,6 +16,9 @@ import Contador from './components/Contador';
 import PaiDireta from './components/direta/Pai';
 import PaiIndireta from './components/indireta/Pai';
 import ContadorV2 from './components/contador/ContadorV2'
+import ParImpar from './components/ParImpar'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
 
 function teste1(){
   return <View>
@@ -103,6 +106,29 @@ function contadorV2(){
 }
 
 
+function parImpar(){
+    return <ParImpar num={1}/>
+}
+
+function relaco(){
+
+    // chamando o componente passando children
+    return <View>
+                <Familia>
+                    <Membro nome={"Ana"}
+                            sobrenome={"Silva"}/>
+                    <Membro nome={"Jose"}
+                            sobrenome={"Alencar"}/>
+               </Familia>
+                <Familia>
+                    <Membro nome={"Carla"}
+                            sobrenome={"Dias"}/>
+                    <Membro nome={"Thais"}
+                            sobrenome={"Aguiar"}/>
+                </Familia>
+            </View>
+}
+
 
 const style = StyleSheet.create({
   App:{
@@ -117,7 +143,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return contadorV2();
+  return relaco();
 
 }
 
