@@ -23,6 +23,13 @@ import Membro from './components/relacao/Membro'
 import UsuarioLogado from './components/UsuarioLogado'
 import If from './components/If'
 
+import ListaProdutos from './components/produtos/ListaProdutos'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+import Input from './components/Input'
+
+
+import Mega from './components/mega/Mega'
+
 
 function teste1(){
   return <View>
@@ -144,6 +151,33 @@ function condicional(){
            </View>
 }
 
+function listaProdutos(){
+
+    return <View>
+                <ListaProdutos/>
+           </View>
+}
+
+
+function listaProdutosV2(){
+
+    return <View>
+                 <ListaProdutosV2/>
+           </View>
+}
+
+function input(){
+    return <View style={style.App}>
+                <Input/>
+           </View>
+}
+
+// MONTANDO COMPONENTES BASEADO EM CLASSE
+// lembrando q em java script, classe é uma função,
+function megaTest(){
+    return <Mega qtdNumeros={5}/>
+}
+
 
 const style = StyleSheet.create({
   App:{
@@ -158,7 +192,7 @@ const style = StyleSheet.create({
 
 function App(){
 
-  return condicional();
+  return megaTest();
 
 }
 
