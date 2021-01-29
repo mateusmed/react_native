@@ -53,23 +53,109 @@ class Mega extends Component{
      * **/
 
     alterarQtdNumero = (qtd) => {
-        this.setState({qtdNumeros:qtd})
+
+        //transformando para numerico
+        qtd = +qtd
+        this.setState({qtdNumeros: +qtd})
     }
+
+
+    //funcao recursivo
+    gerarNumeroNaoContido = (nums) => {
+        const novo = parseInt(Math.random() * 60) + 1;
+
+        if(nums.includes(novo)){
+            return this.gerarNumeroNaoContido(num);
+        }
+
+        return novo;
+    }
+
+    gerarNumeros = () => {
+
+        console.warn(this.state.qtdNumeros);
+
+        // EXEMPLO ... (tres pontos)
+        // os 3 pontos adiciona os elementos não a referencia do objeto.
+        // var parts = ['two', 'three'];
+        // var numbers = ['one', ...parts, 'four', 'five']; // ["one", "two", "three", "four", "five"]
+        let numeros = Array(this.state.qtdNumeros)
+                             .fill()
+                             .reduce( (n) => [...n, this.gerarNumeroNaoContido(n)], []);
+
+        numeros = numeros.join(',');
+
+        this.setState({numeros: numeros});
+    }
+
+
+    meuGerador = () => {
+        let qtdNumeros = this.state.qtdNumeros;
+        let listaGerada = this.gerarNumeros2(qtdNumeros);
+
+        listaGerada = listaGerada.join(',');
+        this.setState({listaGerada:listaGerada})
+    }
+
+
+    //meu metodo
+    gerarNumeros2 = (qtd) => {
+
+        const max = 60;
+        const min = 1;
+
+        let newList = [];
+
+        while(newList.length < qtd){
+
+            let randomNumber =Math.floor((Math.random() * max) + min);
+
+            if(!newList.includes(randomNumber)){
+                newList.push(randomNumber);
+            }
+        }
+
+        return newList;
+    }
+
 
     render(){
         return <View>
 
-                    <Text>Gerador de megasena {this.state.qtdNumeros}</Text>
-                    <TextInput style={{borderBottomWidth:1}}
+                    {/*  FEITO POR MIM    */}
+                    {/*<Text style={Estilo.fontGrande}>Gerador de megasena {this.state.qtdNumeros}</Text>*/}
+                    {/*<TextInput keyboardTyp={"numeric"}*/}
+                    {/*           style={{borderBottomWidth:1}}*/}
+                    {/*           placeholder={"quantidade de numeros"}*/}
+                    {/*           value={`${this.state.qtdNumeros}`}*/}
+
+                    {/*           // SOLUÇÃO 2*/}
+                    {/*           // onChangeText={ (qtd) => {this.alterarQtdNumero(qtd)} }*/}
+
+                    {/*           // SOLUÇÃO 3*/}
+                    {/*           onChangeText={this.alterarQtdNumero}*/}
+                    {/*/>*/}
+                    {/*<Button title={"gerar"}*/}
+                    {/*        onPress={this.meuGerador}/>*/}
+                    {/*<Text>*/}
+                    {/*    {this.state.listaGerada}*/}
+                    {/*</Text>*/}
+
+                    {/*  FUNCIONAL - AULA */}
+                    <Text style={Estilo.fontGrande}>Gerador de megasena {this.state.qtdNumeros}</Text>
+                    <TextInput keyboardTyp={"numeric"}
+                               style={{borderBottomWidth:1}}
                                placeholder={"quantidade de numeros"}
-                               value={this.state.qtdNumeros}
-
-                               // SOLUÇÃO 2
-                               // onChangeText={ (qtd) => {this.alterarQtdNumero(qtd)} }
-
-                               // SOLUÇÃO 3
+                               value={`${this.state.qtdNumeros}`}
                                onChangeText={this.alterarQtdNumero}
                     />
+                    <Button title={"gerar"}
+                            onPress={this.gerarNumeros}/>
+                    <Text>
+                        {this.state.numeros}
+                    </Text>
+
+
                </View>
     }
 }

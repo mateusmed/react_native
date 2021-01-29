@@ -175,7 +175,9 @@ function input(){
 // MONTANDO COMPONENTES BASEADO EM CLASSE
 // lembrando q em java script, classe é uma função,
 function megaTest(){
-    return <Mega qtdNumeros={5}/>
+    return <View style={style.App}>
+                <Mega qtdNumeros={5}/>
+           </View>
 }
 
 
