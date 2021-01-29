@@ -2,6 +2,7 @@ import React, {Fragment, useState, Component} from 'react'
 import {Text, View, Button, TextInput} from 'react-native'
 
 import Estilo from '../estilo'
+import MegaNumero from './MegaNumero'
 
 
 //como herdamos de component
@@ -12,7 +13,8 @@ class Mega extends Component{
     // let {qtdNumero} = this.props;
 
     state = {
-        qtdNumeros: this.props.qtdNumeros
+        qtdNumeros: this.props.qtdNumeros,
+        numeros: []
     }
 
 
@@ -83,7 +85,7 @@ class Mega extends Component{
                              .fill()
                              .reduce( (n) => [...n, this.gerarNumeroNaoContido(n)], []);
 
-        numeros = numeros.join(',');
+        // numeros = numeros.join(',');
 
         this.setState({numeros: numeros});
     }
@@ -119,6 +121,16 @@ class Mega extends Component{
     }
 
 
+    exibirNumeros = () => {
+        const nums = this.state.numeros;
+
+        let list = nums.map( (num) => {
+            return <MegaNumero key={num} num={num}/>
+        })
+
+        return list;
+    }
+
     render(){
         return <View>
 
@@ -142,6 +154,19 @@ class Mega extends Component{
                     {/*</Text>*/}
 
                     {/*  FUNCIONAL - AULA */}
+                    {/*<Text style={Estilo.fontGrande}>Gerador de megasena {this.state.qtdNumeros}</Text>*/}
+                    {/*<TextInput keyboardTyp={"numeric"}*/}
+                    {/*           style={{borderBottomWidth:1}}*/}
+                    {/*           placeholder={"quantidade de numeros"}*/}
+                    {/*           value={`${this.state.qtdNumeros}`}*/}
+                    {/*           onChangeText={this.alterarQtdNumero}*/}
+                    {/*/>*/}
+                    {/*<Button title={"gerar"}*/}
+                    {/*        onPress={this.gerarNumeros}/>*/}
+                    {/*<Text>*/}
+                    {/*    {this.state.numeros}*/}
+                    {/*</Text>*/}
+
                     <Text style={Estilo.fontGrande}>Gerador de megasena {this.state.qtdNumeros}</Text>
                     <TextInput keyboardTyp={"numeric"}
                                style={{borderBottomWidth:1}}
@@ -151,10 +176,13 @@ class Mega extends Component{
                     />
                     <Button title={"gerar"}
                             onPress={this.gerarNumeros}/>
-                    <Text>
-                        {this.state.numeros}
-                    </Text>
 
+                    <View style={ {flexDirection:'row',
+                                   marginTop:20,
+                                   flexWrap:'wrap',
+                                   justifyContent: 'center'} }>
+                        {this.exibirNumeros()}
+                    </View>
 
                </View>
     }

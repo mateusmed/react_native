@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4dea0c-4f77-46dd-84a3-f96335247c86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/If.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/src/components/UsuarioLogado.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/src/components/mega/MegaNumero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercicios/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/src/components/mega/Mega.js" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/src/components/mega/Mega.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +31,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercicios/src/components/relacao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercicios/src/components/produtos" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\workspaceMateus\react_native\exercicios\src\components\produtos" />
       <recent name="C:\dev\workspaceMateus\react_native\exercicios\src\components\relacao" />
       <recent name="C:\dev\workspaceMateus\react_native\exercicios\src\components\indireta" />
     </key>
@@ -56,11 +57,15 @@
       <option name="presentableId" value="Default" />
       <updated>1611575730675</updated>
       <workItem from="1611575732134" duration="18853000" />
-      <workItem from="1611665763226" duration="18301000" />
+      <workItem from="1611665763226" duration="43832000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
